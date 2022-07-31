@@ -21,7 +21,7 @@ jobs:
       run: docker-compose up -d
    
     - name: Copy Environment File
-      run: docker-compose run app cd app && cp .env.example .env
+      run: docker-compose run app bash -c "cd app && cp .env.example .env"
       
     - name: Install Dependencies
       run: docker-compose run app cd app && composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
