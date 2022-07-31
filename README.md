@@ -4,7 +4,7 @@
 
 Laravel 8
 
-MySQL 5.7
+MySQL 8.0
 
 PHP 8.0
 
