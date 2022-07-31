@@ -37,6 +37,6 @@ jobs:
     - name: migration
       run: docker-compose exec -T app cd app && php artisan migrate --seed
       
-　## test実行
+　  ## test実行
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: docker-compose exec -T cd app && app ./vendor/bin/phpunit
