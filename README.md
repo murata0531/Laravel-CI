@@ -45,3 +45,8 @@ $ docker-compose exec db bash
 ```
 $ docker-compose run --rm app bash
 ```
+
+# コンテナとボリュームを削除
+```
+$ docker-compose down --rmi all --volumes --remove-orphans
+```
